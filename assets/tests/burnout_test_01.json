@@ -1,52 +1,244 @@
 {
   "id": "burnout_test_01",
   "title": "요즘 번아웃 지수 테스트",
-  "description": "요즘 내가 얼마나 지쳐 있는지 가볍게 체크해보는 테스트예요.",
-  "estimatedMinutes": 3,
+  "description": "요즘 내가 얼마나 지쳐 있는지, 영포티 관점에서 가볍게 체크해보는 테스트예요.",
+  "estimatedMinutes": 6,
   "visibleForFree": true,
   "questions": [
     {
       "id": "q1",
-      "text": "아침에 눈을 떴을 때, 회사 생각만 하면 다시 자고 싶다.",
+      "text": "아침에 알람이 울릴 때 가장 먼저 드는 생각은?",
       "type": "single_choice",
       "options": [
-        { "id": "o1", "text": "매일 그렇다", "scores": { "burnout": 3 } },
-        { "id": "o2", "text": "가끔 그렇다", "scores": { "burnout": 2 } },
-        { "id": "o3", "text": "거의 없다", "scores": { "burnout": 1 } }
+        { "id": "o1", "text": "오늘도 전쟁이 시작이구나…", "scores": { "burnout": 3 } },
+        { "id": "o2", "text": "조금 피곤하지만 할 만하다.", "scores": { "burnout": 2 } },
+        { "id": "o3", "text": "나름 상쾌하다.", "scores": { "burnout": 1 } }
       ]
     },
     {
       "id": "q2",
-      "text": "요즘 사람 만나는 게 귀찮고 피곤하다.",
+      "text": "출근길 대중교통이나 도로 정체를 바라보는 마음은?",
       "type": "single_choice",
       "options": [
-        { "id": "o1", "text": "매우 그렇다", "scores": { "social": 3 } },
-        { "id": "o2", "text": "조금 그렇다", "scores": { "social": 2 } },
-        { "id": "o3", "text": "아니다", "scores": { "social": 1 } }
+        { "id": "o1", "text": "또 멘탈 갈려나간다 싶다.", "scores": { "burnout": 3 } },
+        { "id": "o2", "text": "한숨 섞인 체념 정도.", "scores": { "burnout": 2 } },
+        { "id": "o3", "text": "팟캐스트 들으며 버틴다.", "scores": { "burnout": 1 } }
+      ]
+    },
+    {
+      "id": "q3",
+      "text": "회사에서 오전 9시 회의가 잡히면?",
+      "type": "single_choice",
+      "options": [
+        { "id": "o1", "text": "밤새 자료 다듬느라 잠을 못 잔다.", "scores": { "burnout": 3 } },
+        { "id": "o2", "text": "이틀 전부터 조금씩 준비한다.", "scores": { "burnout": 2 } },
+        { "id": "o3", "text": "필요한 것만 핵심 위주로 본다.", "scores": { "burnout": 1 } }
+      ]
+    },
+    {
+      "id": "q4",
+      "text": "상사나 고객의 갑작스러운 일정 변경에 대한 반응은?",
+      "type": "single_choice",
+      "options": [
+        { "id": "o1", "text": "짜증이 폭발할 것 같지만 억지로 삼킨다.", "scores": { "burnout": 3 } },
+        { "id": "o2", "text": "또 시작이구나 하고 체념한다.", "scores": { "burnout": 2 } },
+        { "id": "o3", "text": "불편하지만 해결책을 찾는다.", "scores": { "burnout": 1 } }
+      ]
+    },
+    {
+      "id": "q5",
+      "text": "점심시간을 어떻게 보내는 편인가요?",
+      "type": "single_choice",
+      "options": [
+        { "id": "o1", "text": "밥도 못 먹고 회의나 보고서한다.", "scores": { "burnout": 3 } },
+        { "id": "o2", "text": "사무실에서 대충 때운다.", "scores": { "burnout": 2 } },
+        { "id": "o3", "text": "팀원과 기분 전환하며 먹는다.", "scores": { "burnout": 1 } }
+      ]
+    },
+    {
+      "id": "q6",
+      "text": "퇴근 시간 직전에 메신저가 울릴 때 든 생각은?",
+      "type": "single_choice",
+      "options": [
+        { "id": "o1", "text": "또 야근이다… 힘이 쭉 빠진다.", "scores": { "burnout": 3 } },
+        { "id": "o2", "text": "일단 확인하고 조용히 욕한다.", "scores": { "burnout": 2 } },
+        { "id": "o3", "text": "급하면 대응하고 아니면 내일로 미룬다.", "scores": { "burnout": 1 } }
+      ]
+    },
+    {
+      "id": "q7",
+      "text": "주중 저녁 회식 제안이 들어오면?",
+      "type": "single_choice",
+      "options": [
+        { "id": "o1", "text": "거절하기도 힘들고 나가면 체력이 고갈된다.", "scores": { "burnout": 3 } },
+        { "id": "o2", "text": "가긴 하지만 빨리 빠질 생각만 한다.", "scores": { "burnout": 2 } },
+        { "id": "o3", "text": "때로는 즐거운 스트레스 해소다.", "scores": { "burnout": 1 } }
+      ]
+    },
+    {
+      "id": "q8",
+      "text": "가족과 약속했던 주말 계획이 업무 때문에 깨졌을 때?",
+      "type": "single_choice",
+      "options": [
+        { "id": "o1", "text": "미안함 + 허탈함이 극대화된다.", "scores": { "burnout": 3 } },
+        { "id": "o2", "text": "익숙하지만 마음이 무겁다.", "scores": { "burnout": 2 } },
+        { "id": "o3", "text": "양해를 구하고 다른 시간을 마련한다.", "scores": { "burnout": 1 } }
+      ]
+    },
+    {
+      "id": "q9",
+      "text": "최근 1년 동안 휴가를 온전히 내 마음대로 쓴 적이?",
+      "type": "single_choice",
+      "options": [
+        { "id": "o1", "text": "한 번도 없다. 늘 눈치 보며 일했다.", "scores": { "burnout": 3 } },
+        { "id": "o2", "text": "겨우 하루 이틀 정도는 있었다.", "scores": { "burnout": 2 } },
+        { "id": "o3", "text": "일정 조율해서 다녀왔다.", "scores": { "burnout": 1 } }
+      ]
+    },
+    {
+      "id": "q10",
+      "text": "저녁 늦게 먹는 야식이나 술이 일상이 되었나요?",
+      "type": "single_choice",
+      "options": [
+        { "id": "o1", "text": "일주일 3~4번 이상이다.", "scores": { "burnout": 3 } },
+        { "id": "o2", "text": "가끔 폭주한다.", "scores": { "burnout": 2 } },
+        { "id": "o3", "text": "웬만하면 절제한다.", "scores": { "burnout": 1 } }
+      ]
+    },
+    {
+      "id": "q11",
+      "text": "체력이 예전 같지 않다는 걸 느끼는 빈도는?",
+      "type": "single_choice",
+      "options": [
+        { "id": "o1", "text": "거의 매일이다. 계단 오르기도 버겁다.", "scores": { "burnout": 3 } },
+        { "id": "o2", "text": "일주일에 몇 번은 확 느낀다.", "scores": { "burnout": 2 } },
+        { "id": "o3", "text": "운동으로 어느 정도 관리한다.", "scores": { "burnout": 1 } }
+      ]
+    },
+    {
+      "id": "q12",
+      "text": "자기계발이나 취미에 쓰는 시간은?",
+      "type": "single_choice",
+      "options": [
+        { "id": "o1", "text": "0에 수렴한다. 미뤄두는 중이다.", "scores": { "burnout": 3 } },
+        { "id": "o2", "text": "한 달에 한두 번 겨우 챙긴다.", "scores": { "burnout": 2 } },
+        { "id": "o3", "text": "짧아도 꾸준히 시간을 난다.", "scores": { "burnout": 1 } }
+      ]
+    },
+    {
+      "id": "q13",
+      "text": "팀원이나 후배가 질문을 하면?",
+      "type": "single_choice",
+      "options": [
+        { "id": "o1", "text": "기운이 빠져 짜증부터 난다.", "scores": { "burnout": 3 } },
+        { "id": "o2", "text": "겉으론 친절하지만 속으로는 한숨 쉰다.", "scores": { "burnout": 2 } },
+        { "id": "o3", "text": "가능한 범위에서 도와준다.", "scores": { "burnout": 1 } }
+      ]
+    },
+    {
+      "id": "q14",
+      "text": "성과 압박을 받을 때 나타나는 몸의 반응은?",
+      "type": "single_choice",
+      "options": [
+        { "id": "o1", "text": "두통, 소화불량 등 몸이 먼저 신호를 보낸다.", "scores": { "burnout": 4 } },
+        { "id": "o2", "text": "불면증, 긴장감이 꾸준히 이어진다.", "scores": { "burnout": 3 } },
+        { "id": "o3", "text": "살짝 예민해지지만 조절한다.", "scores": { "burnout": 2 } },
+        { "id": "o4", "text": "큰 변화는 없다.", "scores": { "burnout": 1 } }
+      ]
+    },
+    {
+      "id": "q15",
+      "text": "가족이나 친구의 연락을 받을 때 감정은?",
+      "type": "single_choice",
+      "options": [
+        { "id": "o1", "text": "힘든 이야기까지 할 에너지가 없다.", "scores": { "burnout": 3 } },
+        { "id": "o2", "text": "반갑지만 업무 생각이 먼저 든다.", "scores": { "burnout": 2 } },
+        { "id": "o3", "text": "짧게라도 반갑게 안부를 묻는다.", "scores": { "burnout": 1 } }
+      ]
+    },
+    {
+      "id": "q16",
+      "text": "주말 아침에 일어나서 가장 하고 싶은 행동은?",
+      "type": "single_choice",
+      "options": [
+        { "id": "o1", "text": "침대에서 계속 버티며 아무것도 안 하기.", "scores": { "burnout": 3 } },
+        { "id": "o2", "text": "TV나 유튜브로 멍 때리기.", "scores": { "burnout": 2 } },
+        { "id": "o3", "text": "가족과 운동/외출 계획 세우기.", "scores": { "burnout": 1 } }
+      ]
+    },
+    {
+      "id": "q17",
+      "text": "최근 3개월 동안 퇴사 생각을 한 빈도는?",
+      "type": "single_choice",
+      "options": [
+        { "id": "o1", "text": "일주일에 한 번 이상.", "scores": { "burnout": 3 } },
+        { "id": "o2", "text": "한 달에 두세 번.", "scores": { "burnout": 2 } },
+        { "id": "o3", "text": "거의 없다.", "scores": { "burnout": 1 } }
+      ]
+    },
+    {
+      "id": "q18",
+      "text": "회사 메신저 알림을 끄고 싶은 충동이 드는가?",
+      "type": "single_choice",
+      "options": [
+        { "id": "o1", "text": "항상 끄고 싶지만 그럴 수 없다.", "scores": { "burnout": 3 } },
+        { "id": "o2", "text": "하루에도 몇 번씩 끄고 켠다.", "scores": { "burnout": 2 } },
+        { "id": "o3", "text": "정해둔 시간 외에는 알림을 관리한다.", "scores": { "burnout": 1 } }
+      ]
+    },
+    {
+      "id": "q19",
+      "text": "아이 또는 배우자와 진지하게 대화한 시간을 떠올리면?",
+      "type": "single_choice",
+      "options": [
+        { "id": "o1", "text": "언제였는지 기억이 희미하다.", "scores": { "burnout": 3 } },
+        { "id": "o2", "text": "최근 한 달 사이에 한번 정도 있었다.", "scores": { "burnout": 2 } },
+        { "id": "o3", "text": "주기적으로 시간 내어 이야기한다.", "scores": { "burnout": 1 } }
+      ]
+    },
+    {
+      "id": "q20",
+      "text": "회사 밖에서 나를 위한 작은 선물을 산 적은?",
+      "type": "single_choice",
+      "options": [
+        { "id": "o1", "text": "거의 없다. 다 가족이나 업무 관련이다.", "scores": { "burnout": 3 } },
+        { "id": "o2", "text": "생각날 때만 가끔 산다.", "scores": { "burnout": 2 } },
+        { "id": "o3", "text": "나를 위한 보상도 챙긴다.", "scores": { "burnout": 1 } }
       ]
     }
   ],
   "resultRules": [
     {
-      "id": "type_a",
+      "id": "burnout_high",
       "title": "불타버린 엔진형",
-      "condition": { "burnout_min": 6 },
-      "summary": "지금은 엔진이 거의 과열 상태예요.",
-      "description": "최근 들어 몸도 마음도 많이 지쳐 있는 상태일 가능성이 높아요..."
+      "icon": "🔥",
+      "condition": { "burnout_min": 48 },
+      "summary": "지금은 몸도 마음도 거의 한계치에 가까운 상태예요.",
+      "description": "최근 몇 달 동안 제대로 쉬어본 기억이 잘 나지 않을 수 있어요. 출근길마다 한숨이 나고, 사소한 일정 변경에도 감정이 요동칠 수 있습니다.\n\n가족이나 동료의 연락조차 부담으로 느껴질 만큼 에너지가 바닥났다는 신호예요. 몸이 보내는 통증과 짜증은 이미 오래전부터 경고등을 켜고 있었을지도 모릅니다.\n\n지금 필요한 건 더 많은 야근이 아니라, 명확한 휴식과 경계 설정입니다. 작은 휴가라도 강제로 넣고, 업무의 우선순위를 다시 정리해 보세요. 스스로를 돌보지 않으면 언젠가 진짜로 엔진이 멈춰 설 수 있습니다."
     },
     {
-      "id": "type_b",
+      "id": "burnout_mid_high",
       "title": "조용한 피로 누적형",
-      "condition": { "burnout_min": 4, "burnout_max": 5 },
-      "summary": "겉으로는 괜찮아 보이지만, 조금씩 피로가 쌓이고 있어요.",
-      "description": "아직은 버틸 만하지만, 이 상태가 길어지면 어느 순간 확 무너질 수 있어요..."
+      "icon": "😵‍💫",
+      "condition": { "burnout_min": 36, "burnout_max": 47 },
+      "summary": "겉으로는 괜찮아 보이지만, 안쪽에서는 조금씩 경고등이 켜지고 있어요.",
+      "description": "업무, 가족, 건강 사이에서 애써 균형을 맞추는 중입니다. 주변 사람들은 '잘 지낸다'고 생각할지 몰라도, 마음속으로는 자꾸만 알람이 울립니다.\n\n퇴근 후에도 메신저를 계속 확인하고, 휴가를 쓰더라도 일 생각이 떠나질 않나요? 이런 패턴은 어느 순간 폭발점을 만들기 쉽습니다.\n\n지금부터라도 주말의 일정 한 칸을 온전히 본인을 위해 비워두고, 팀에 단호하게 거절할 수 있는 기준을 세워보세요. 그렇지 않으면 '조용한 피로'가 순식간에 '폭발'로 바뀔 수 있습니다."
     },
     {
-      "id": "type_c",
-      "title": "관리 잘하는 휴식형",
-      "condition": { "burnout_max": 3 },
-      "summary": "지금은 비교적 잘 관리하고 있는 편이에요.",
-      "description": "필요할 때 잘 쉬고, 스스로를 챙기는 힘이 있는 타입입니다..."
+      "id": "burnout_mid",
+      "title": "적당히 지친 직장인",
+      "icon": "😮‍💨",
+      "condition": { "burnout_min": 26, "burnout_max": 35 },
+      "summary": "누구나 겪는 피로 속에서도 나름 균형을 유지하려 애쓰는 상태예요.",
+      "description": "주말이면 누워 있고 싶지만, 동시에 가족과 시간을 보내며 리셋하려는 마음도 있습니다. 출근길이 무겁긴 하지만, 완전히 무너질 정도는 아니죠.\n\n이 단계에서 중요한 건 '지금 유지하는 좋은 습관'을 더 공고히 하는 것입니다. 짧은 운동이나 취미, 작은 보상을 꾸준히 챙기세요.\n\n어느 정도 피곤을 인정하면서도, 자신만의 회복 루틴을 만들면 더 높은 단계의 번아웃으로 올라가는 걸 막을 수 있습니다."
+    },
+    {
+      "id": "burnout_low",
+      "title": "관리 잘하는 상태",
+      "icon": "💪",
+      "condition": { "burnout_max": 25 },
+      "summary": "지금은 비교적 자신을 잘 돌보고 있는 편이에요.",
+      "description": "일과 삶의 경계를 비교적 명확하게 지키고 있으며, 필요할 때는 주변 도움도 구할 수 있는 사람입니다.\n\n가족과의 시간, 자기계발, 휴식 루틴을 고르게 챙기고 있다면 이 장점을 계속 이어가세요. 직장에서의 경험과 연륜이 오히려 좋은 방향으로 작용하고 있습니다.\n\n다만, 이 상태도 방심하면 언제든 깨질 수 있습니다. 작은 신호를 무시하지 말고, 몸과 마음이 보내는 피드백을 꾸준히 확인하세요."
     }
   ]
 }

@@ -1,19 +1,25 @@
 import burnoutTest from '../../assets/tests/burnout_test_01.json';
 import relationshipVibes from '../../assets/tests/relationship_vibes_01.json';
 import studyFocus from '../../assets/tests/study_focus_test_01.json';
+import companyCharacterTest from '../../assets/tests/company_character_01.json';
+import drinkingCharacterTest from '../../assets/tests/drinking_character_01.json';
+import fatherStyleTest from '../../assets/tests/father_style_01.json';
 import { PersonalityTest } from './testTypes';
 
 const ALL_TESTS: PersonalityTest[] = [
   burnoutTest as PersonalityTest,
   relationshipVibes as PersonalityTest,
   studyFocus as PersonalityTest,
-  // TODO: 필요 시 추가 JSON을 여기에 push
+  companyCharacterTest as PersonalityTest,
+  drinkingCharacterTest as PersonalityTest,
+  fatherStyleTest as PersonalityTest,
 ];
 
 const YOUNG_FORTY_TEST_IDS: string[] = [
   'burnout_test_01',
-  'relationship_vibes_01',
-  // TODO: 영포티 타겟 테스트 추가 시 id를 여기에 등록
+  'company_character_01',
+  'drinking_character_01',
+  'father_style_01',
 ];
 
 export const getAllTests = (): PersonalityTest[] => {

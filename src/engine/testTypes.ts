@@ -20,6 +20,7 @@ export interface ResultCondition {
 export interface TestResultRule {
   id: string;
   title: string;
+  icon?: string;
   condition: ResultCondition;
   summary: string;
   description: string;

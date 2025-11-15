@@ -1,0 +1,243 @@
+{
+  "id": "company_character_01",
+  "title": "회사에서 나는 어떤 캐릭터일까?",
+  "description": "상사, 동료, 후배 사이에서 나는 어떤 타입인지 가볍게 체크해보는 테스트예요.",
+  "estimatedMinutes": 5,
+  "visibleForFree": false,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "회의에서 의견을 낼 때 나는?",
+      "type": "single_choice",
+      "options": [
+        { "id": "o1", "text": "먼저 테이블에 올리고 분위기를 주도한다.", "scores": { "company": 3 } },
+        { "id": "o2", "text": "흐름을 보다가 핵심만 던진다.", "scores": { "company": 2 } },
+        { "id": "o3", "text": "말보다 정리된 문서로 보여준다.", "scores": { "company": 1 } }
+      ]
+    },
+    {
+      "id": "q2",
+      "text": "상사가 무리한 요구를 할 때 내 반응은?",
+      "type": "single_choice",
+      "options": [
+        { "id": "o1", "text": "일단 받아서 해결 방법을 찾는다.", "scores": { "company": 3 } },
+        { "id": "o2", "text": "가능한 범위를 조율해본다.", "scores": { "company": 2 } },
+        { "id": "o3", "text": "근거를 들며 명확히 거절한다.", "scores": { "company": 1 } }
+      ]
+    },
+    {
+      "id": "q3",
+      "text": "동료가 실수했을 때 나는?",
+      "type": "single_choice",
+      "options": [
+        { "id": "o1", "text": "감싸주며 대신 해결책을 만든다.", "scores": { "company": 3 } },
+        { "id": "o2", "text": "같이 원인을 찾아본다.", "scores": { "company": 2 } },
+        { "id": "o3", "text": "정확히 기록하고 재발을 막는다.", "scores": { "company": 1 } }
+      ]
+    },
+    {
+      "id": "q4",
+      "text": "보고서를 작성할 때 가장 신경 쓰는 부분은?",
+      "type": "single_choice",
+      "options": [
+        { "id": "o1", "text": "설득력 있는 스토리와 한 방 메시지", "scores": { "company": 3 } },
+        { "id": "o2", "text": "데이터와 흐름의 균형", "scores": { "company": 2 } },
+        { "id": "o3", "text": "팩트 검증과 디테일", "scores": { "company": 1 } }
+      ]
+    },
+    {
+      "id": "q5",
+      "text": "점심시간에 주로 하는 행동은?",
+      "type": "single_choice",
+      "options": [
+        { "id": "o1", "text": "팀 전체 회동을 주도한다.", "scores": { "company": 3 } },
+        { "id": "o2", "text": "둘 이상만 모여도 편하게 대화한다.", "scores": { "company": 2 } },
+        { "id": "o3", "text": "조용히 밥 먹으며 생각 정리한다.", "scores": { "company": 1 } }
+      ]
+    },
+    {
+      "id": "q6",
+      "text": "칼퇴 vs 야근에 대한 내 태도는?",
+      "type": "single_choice",
+      "options": [
+        { "id": "o1", "text": "필요하면 새벽까지라도 붙잡고 한다.", "scores": { "company": 3 } },
+        { "id": "o2", "text": "상황 보며 균형 잡으려 한다.", "scores": { "company": 2 } },
+        { "id": "o3", "text": "불필요한 야근은 단호히 거절한다.", "scores": { "company": 1 } }
+      ]
+    },
+    {
+      "id": "q7",
+      "text": "후배가 방향을 못 잡을 때 나는?",
+      "type": "single_choice",
+      "options": [
+        { "id": "o1", "text": "1:1로 붙어서 방향을 잡아준다.", "scores": { "company": 3 } },
+        { "id": "o2", "text": "가이드라인과 참고 자료를 준다.", "scores": { "company": 2 } },
+        { "id": "o3", "text": "할 일을 명확히 쪼개서 전달한다.", "scores": { "company": 1 } }
+      ]
+    },
+    {
+      "id": "q8",
+      "text": "잡담이나 스몰토크에 대한 태도는?",
+      "type": "single_choice",
+      "options": [
+        { "id": "o1", "text": "팀 분위기 살리는 필수라고 본다.", "scores": { "company": 3 } },
+        { "id": "o2", "text": "필요할 땐 즐겁게 섞인다.", "scores": { "company": 2 } },
+        { "id": "o3", "text": "업무 시간엔 집중이 우선이다.", "scores": { "company": 1 } }
+      ]
+    },
+    {
+      "id": "q9",
+      "text": "회사에서 갈등 조정 요청이 들어오면?",
+      "type": "single_choice",
+      "options": [
+        { "id": "o1", "text": "중재자로 나서서 분위기를 풀어준다.", "scores": { "company": 3 } },
+        { "id": "o2", "text": "사실 관계를 정리해 모두가 수긍하게 만든다.", "scores": { "company": 2 } },
+        { "id": "o3", "text": "책임자가 누구인지 명확히 한다.", "scores": { "company": 1 } }
+      ]
+    },
+    {
+      "id": "q10",
+      "text": "상사를 설득할 때 가장 자주 쓰는 무기는?",
+      "type": "single_choice",
+      "options": [
+        { "id": "o1", "text": "열정과 스토리텔링", "scores": { "company": 3 } },
+        { "id": "o2", "text": "근거 있는 데이터", "scores": { "company": 2 } },
+        { "id": "o3", "text": "시장/동종 사례와 리스크 분석", "scores": { "company": 1 } }
+      ]
+    },
+    {
+      "id": "q11",
+      "text": "팀 회식에서 나는 보통?",
+      "type": "single_choice",
+      "options": [
+        { "id": "o1", "text": "분위기를 띄우는 MC 역할", "scores": { "company": 3 } },
+        { "id": "o2", "text": "좌중과 균형 있게 대화", "scores": { "company": 2 } },
+        { "id": "o3", "text": "조용하지만 필요한 말은 꼭 한다.", "scores": { "company": 1 } }
+      ]
+    },
+    {
+      "id": "q12",
+      "text": "프로젝트 초반 역할 분담에 대한 내 태도는?",
+      "type": "single_choice",
+      "options": [
+        { "id": "o1", "text": "내가 중심 잡고 배분한다.", "scores": { "company": 3 } },
+        { "id": "o2", "text": "자율성을 주고 필요 시 조정한다.", "scores": { "company": 2 } },
+        { "id": "o3", "text": "각자의 전문성에 맞춰 세밀히 분류한다.", "scores": { "company": 1 } }
+      ]
+    },
+    {
+      "id": "q13",
+      "text": "주간 업무 계획을 세울 때 중요한 기준은?",
+      "type": "single_choice",
+      "options": [
+        { "id": "o1", "text": "전체 KPI와 임팩트", "scores": { "company": 3 } },
+        { "id": "o2", "text": "팀 내 협업 일정 맞추기", "scores": { "company": 2 } },
+        { "id": "o3", "text": "디테일한 체크리스트", "scores": { "company": 1 } }
+      ]
+    },
+    {
+      "id": "q14",
+      "text": "사내 정치나 정보전에서의 내 전략은?",
+      "type": "single_choice",
+      "options": [
+        { "id": "o1", "text": "키 플레이어와 빠르게 친분을 맺는다.", "scores": { "company": 3 } },
+        { "id": "o2", "text": "필요한 정보는 놓치지 않고 챙긴다.", "scores": { "company": 2 } },
+        { "id": "o3", "text": "겉으로 드러내지 않고 근거를 모은다.", "scores": { "company": 1 } }
+      ]
+    },
+    {
+      "id": "q15",
+      "text": "문제가 터졌을 때 가장 먼저 하는 행동은?",
+      "type": "single_choice",
+      "options": [
+        { "id": "o1", "text": "상황을 장악하고 해결책을 제시한다.", "scores": { "company": 3 } },
+        { "id": "o2", "text": "원인을 파악해 우선순위를 정한다.", "scores": { "company": 2 } },
+        { "id": "o3", "text": "증거를 확보하고 문서화한다.", "scores": { "company": 1 } }
+      ]
+    },
+    {
+      "id": "q16",
+      "text": "새로운 업무 툴이나 시스템이 도입되면?",
+      "type": "single_choice",
+      "options": [
+        { "id": "o1", "text": "먼저 써보고 팀에 확산한다.", "scores": { "company": 3 } },
+        { "id": "o2", "text": "필요성/효율성을 따져본다.", "scores": { "company": 2 } },
+        { "id": "o3", "text": "기존 방식과 차이를 꼼꼼히 비교한다.", "scores": { "company": 1 } }
+      ]
+    },
+    {
+      "id": "q17",
+      "text": "승진 후 가장 먼저 하고 싶은 일은?",
+      "type": "single_choice",
+      "options": [
+        { "id": "o1", "text": "조직 문화를 바꾸는 프로젝트", "scores": { "company": 3 } },
+        { "id": "o2", "text": "팀 구조와 역할 재정비", "scores": { "company": 2 } },
+        { "id": "o3", "text": "업무 프로세스 표준화", "scores": { "company": 1 } }
+      ]
+    },
+    {
+      "id": "q18",
+      "text": "후배에게 가장 강조하고 싶은 덕목은?",
+      "type": "single_choice",
+      "options": [
+        { "id": "o1", "text": "배짱과 실행력", "scores": { "company": 3 } },
+        { "id": "o2", "text": "협업과 커뮤니케이션", "scores": { "company": 2 } },
+        { "id": "o3", "text": "기록과 분석 습관", "scores": { "company": 1 } }
+      ]
+    },
+    {
+      "id": "q19",
+      "text": "회사 소문이나 이슈를 다룰 때 나는?",
+      "type": "single_choice",
+      "options": [
+        { "id": "o1", "text": "정보를 빠르게 공유해 분위기를 끌어간다.", "scores": { "company": 3 } },
+        { "id": "o2", "text": "사실 여부를 파악한 뒤 신중히 말한다.", "scores": { "company": 2 } },
+        { "id": "o3", "text": "기록을 남겨 향후 대비한다.", "scores": { "company": 1 } }
+      ]
+    },
+    {
+      "id": "q20",
+      "text": "퇴사 혹은 이직을 고민할 때 가장 보는 기준은?",
+      "type": "single_choice",
+      "options": [
+        { "id": "o1", "text": "내 영향력과 성장 가능성", "scores": { "company": 3 } },
+        { "id": "o2", "text": "팀 분위기와 복지, 안정성", "scores": { "company": 2 } },
+        { "id": "o3", "text": "역할 명확성과 워라밸", "scores": { "company": 1 } }
+      ]
+    }
+  ],
+  "resultRules": [
+    {
+      "id": "company_strategist",
+      "title": "정치 9단 전략가",
+      "icon": "🧠",
+      "condition": { "company_min": 50 },
+      "summary": "조직 지형을 빠르게 읽고 주도권을 잡는 타입입니다.",
+      "description": "회의든 사내 프로젝트든 당신이 들어오면 판이 바뀝니다. 관계를 활용해 길을 열고, 필요한 순간에는 과감하게 결정을 밀어붙입니다.\n\n이 스타일은 조직의 큰 변화를 만들 때 강력한 힘이 되지만, 주변에서 '너무 계산적'이라는 오해를 받을 수도 있습니다. 신뢰를 잃지 않도록 진심 어린 피드백과 휴식도 잊지 마세요."
+    },
+    {
+      "id": "company_commander",
+      "title": "직진형 돌격대장",
+      "icon": "🧱",
+      "condition": { "company_min": 40, "company_max": 49 },
+      "summary": "누가 시키지 않아도 스스로 전선으로 달려가는 스타일입니다.",
+      "description": "위험을 감수하고 책임을 떠안는 편입니다. 팀이 헤맬 때 크게 한 번 쳐주는 역할을 도맡곤 하죠.\n\n다만 과격한 드라이브가 주변 사람들을 지치게 만들 수도 있습니다. 스스로를 돌보는 시간과 팀의 페이스도 함께 고려하면 더 오래 달릴 수 있어요."
+    },
+    {
+      "id": "company_mediator",
+      "title": "눈치 100단 중재자",
+      "icon": "🕊️",
+      "condition": { "company_min": 30, "company_max": 39 },
+      "summary": "분위기 파악과 갈등 조정에서 뛰어난 감각을 가졌습니다.",
+      "description": "동료 사이에서 완충제 역할을 하며 회사를 평온하게 만들죠. 보고/보고받기에서도 균형 잡힌 시각을 보여줍니다.\n\n다만 결정적인 순간엔 '선 넘는' 결단력도 필요합니다. 내 기준과 명확한 전략을 세워둘수록 장점이 빛납니다."
+    },
+    {
+      "id": "company_artisan",
+      "title": "조용한 실무 장인",
+      "icon": "🧩",
+      "condition": { "company_max": 29 },
+      "summary": "디테일과 안정감을 무기로 조직을 받쳐주는 핵심 인재입니다.",
+      "description": "크게 드러나진 않아도 누구보다 믿음직한 실행력을 보여줍니다. 위험보다 안정, 정치보다 실력을 선택하는 편입니다.\n\n때로는 조금 더 존재감을 드러내야 기회가 찾아오기도 합니다. 당신의 방식이 틀린 게 아니라는 확신을 갖고, 필요한 순간엔 한 발 앞으로 나와보세요."
+    }
+  ]
+}

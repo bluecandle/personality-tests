@@ -1,9 +1,10 @@
-import React, { useMemo } from 'react';
+import React, { useEffect, useMemo } from 'react';
 import { Box, Button, Text, VStack } from 'native-base';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { RootStackParamList } from '../navigation/RootNavigator';
 import { useTestEngine } from '../state/TestEngineProvider';
 import { evaluateResult } from '../engine/testEvaluator';
+import { maybeShowInterstitialAfterTest } from '../services/ads';
 
 type Props = NativeStackScreenProps<RootStackParamList, 'TestResult'>;
 
@@ -16,6 +17,12 @@ const TestResultScreen = ({ navigation }: Props) => {
     }
     return evaluateResult(currentTest, scores);
   }, [currentTest, scores]);
+
+  useEffect(() => {
+    if (currentTest) {
+      maybeShowInterstitialAfterTest();
+    }
+  }, [currentTest]);
 
   const handleBackToList = () => {
     resetTest();
@@ -35,6 +42,9 @@ const TestResultScreen = ({ navigation }: Props) => {
     );
   }
 
+  const isBurnoutTest = currentTest.id === 'burnout_test_01';
+  const burnoutScore = scores.burnout ?? 0;
+
   return (
     <Box flex={1} bg="gray.900" safeArea>
       <VStack flex={1} px={6} py={8} space={6}>
@@ -45,11 +55,30 @@ const TestResultScreen = ({ navigation }: Props) => {
           </Text>
         </VStack>
 
-        <VStack space={3} bg="gray.800" borderRadius="lg" borderColor="gray.700" borderWidth={1} px={4} py={6}>
-          <Text color="primary.300" fontSize="xl" fontWeight="bold">
+        <VStack
+          space={4}
+          bg="gray.800"
+          borderRadius="lg"
+          borderColor="gray.700"
+          borderWidth={1}
+          px={4}
+          py={6}
+          alignItems="center"
+        >
+          {result.icon && (
+            <Text fontSize="5xl" accessibilityLabel="result icon">
+              {result.icon}
+            </Text>
+          )}
+          <Text color="primary.300" fontSize="xl" fontWeight="bold" textAlign="center">
             {result.title}
           </Text>
-          <Text color="gray.200" fontWeight="medium">
+          {isBurnoutTest && (
+            <Text color="gray.100" fontWeight="semibold">
+              내 번아웃 점수: {burnoutScore}점 ({result.title})
+            </Text>
+          )}
+          <Text color="gray.200" fontWeight="medium" textAlign="center">
             {result.summary}
           </Text>
           <Text color="gray.300">{result.description}</Text>

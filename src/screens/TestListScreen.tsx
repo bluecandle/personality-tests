@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react';
+import React, { useEffect, useMemo } from 'react';
 import { FlatList } from 'react-native';
 import { Badge, Box, Button, HStack, Pressable, Text, VStack } from 'native-base';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
@@ -6,12 +6,17 @@ import { RootStackParamList } from '../navigation/RootNavigator';
 import { getAllTests } from '../engine/testLoader';
 import { PersonalityTest } from '../engine/testTypes';
 import { useTestEngine } from '../state/TestEngineProvider';
+import { showListBanner } from '../services/ads';
 
 type Props = NativeStackScreenProps<RootStackParamList, 'TestList'>;
 
 const TestListScreen = ({ navigation }: Props) => {
   const { isPremiumUnlocked } = useTestEngine();
   const tests = useMemo(() => getAllTests(), []);
+
+  useEffect(() => {
+    showListBanner();
+  }, []);
 
   const handlePress = (test: PersonalityTest) => {
     const isLocked = !test.visibleForFree && !isPremiumUnlocked;
@@ -71,13 +76,27 @@ const TestListScreen = ({ navigation }: Props) => {
           keyExtractor={(item) => item.id}
           renderItem={renderItem}
           ItemSeparatorComponent={() => <Box height={4} />}
-          contentContainerStyle={{ paddingBottom: 32 }}
+          contentContainerStyle={{ paddingBottom: 16 }}
           ListEmptyComponent={
             <Box bg="gray.800" borderRadius="lg" borderColor="gray.700" borderWidth={1} px={4} py={6}>
               <Text color="gray.300">등록된 테스트가 없습니다.</Text>
             </Box>
           }
         />
+        <Box
+          mt={4}
+          bg="gray.800"
+          borderRadius="lg"
+          borderColor="gray.700"
+          borderWidth={1}
+          px={4}
+          py={4}
+          alignItems="center"
+        >
+          <Text color="gray.400" fontSize="sm">
+            여기는 광고가 들어갈 자리입니다.
+          </Text>
+        </Box>
       </VStack>
     </Box>
   );
