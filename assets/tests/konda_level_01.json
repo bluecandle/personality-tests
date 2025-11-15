@@ -1,0 +1,243 @@
+{
+  "id": "konda_level_01",
+  "title": "나는 꼰대일까, 멋진 어른일까?",
+  "description": "말 한마디, 농담 한 줄에 꼰대 소리 듣는 시대. 나는 꼰대일까, 멋진 어른일까 가볍게 체크해보는 테스트예요.",
+  "estimatedMinutes": 5,
+  "visibleForFree": false,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "후배가 \"이번 주는 워라밸 좀 챙기고 싶다\"고 말했을 때 나는?",
+      "type": "single_choice",
+      "options": [
+        { "id": "o1", "text": "\"그럴 땐 내가 일정 조정 도와줄게\"라고 한다.", "scores": { "konda": 1 } },
+        { "id": "o2", "text": "\"우리 땐 그런 말도 못 꺼냈다\" 무심코 말한다.", "scores": { "konda": 3 } },
+        { "id": "o3", "text": "필요하면 오늘은 빨리 들어가라고 권한다.", "scores": { "konda": 2 } }
+      ]
+    },
+    {
+      "id": "q2",
+      "text": "새로운 밈이나 유튜브 채널을 설명하는 후배에게 나는?",
+      "type": "single_choice",
+      "options": [
+        { "id": "o1", "text": "\"그게 뭔지 링크 좀 보내줘\"라며 관심을 보인다.", "scores": { "konda": 1 } },
+        { "id": "o2", "text": "\"그런 건 나중에 해도 되잖아\"라며 대충 넘긴다.", "scores": { "konda": 3 } },
+        { "id": "o3", "text": "\"나도 들어봤는데 재밌더라\"며 대화를 이어간다.", "scores": { "konda": 2 } }
+      ]
+    },
+    {
+      "id": "q3",
+      "text": "\"나 때는 말이야\"라는 말을 얼마나 자주 하나요?",
+      "type": "single_choice",
+      "options": [
+        { "id": "o1", "text": "거의 하지 않는다.", "scores": { "konda": 1 } },
+        { "id": "o2", "text": "가끔 분위기 풀려고 농담처럼 한다.", "scores": { "konda": 2 } },
+        { "id": "o3", "text": "상황 설명할 때마다 자연스럽게 튀어나온다.", "scores": { "konda": 3 } }
+      ]
+    },
+    {
+      "id": "q4",
+      "text": "회의에서 MZ세대 아이디어가 튀어나왔을 때 내 태도는?",
+      "type": "single_choice",
+      "options": [
+        { "id": "o1", "text": "장점과 리스크를 같이 보고 발전시킨다.", "scores": { "konda": 1 } },
+        { "id": "o2", "text": "실현 가능성부터 따지고 보수적으로 본다.", "scores": { "konda": 2 } },
+        { "id": "o3", "text": "\"우리 업계에선 안 먹혀\"라고 일축한다.", "scores": { "konda": 3 } }
+      ]
+    },
+    {
+      "id": "q5",
+      "text": "술자리에서 후배에게 자주 하는 말은?",
+      "type": "single_choice",
+      "options": [
+        { "id": "o1", "text": "\"요즘 힘든 건 없어?\" 먼저 묻는다.", "scores": { "konda": 1 } },
+        { "id": "o2", "text": "\"연애는 하냐\" 등 사생활을 캐묻는다.", "scores": { "konda": 3 } },
+        { "id": "o3", "text": "\"회사 생활은 재미있어야 한다\"며 조언한다.", "scores": { "konda": 2 } }
+      ]
+    },
+    {
+      "id": "q6",
+      "text": "후배가 실수했을 때 가장 먼저 떠오르는 반응은?",
+      "type": "single_choice",
+      "options": [
+        { "id": "o1", "text": "\"괜찮아, 다음에 어떻게 막을까?\"를 함께 고민한다.", "scores": { "konda": 1 } },
+        { "id": "o2", "text": "실수 과정을 하나하나 짚어가며 혼낸다.", "scores": { "konda": 3 } },
+        { "id": "o3", "text": "앞으로의 가이드라인을 정리해 준다.", "scores": { "konda": 2 } }
+      ]
+    },
+    {
+      "id": "q7",
+      "text": "자녀에게 유행하는 게임/OTT 콘텐츠를 얼마나 알고 있나요?",
+      "type": "single_choice",
+      "options": [
+        { "id": "o1", "text": "직접 같이 해본 경험이 있다.", "scores": { "konda": 1 } },
+        { "id": "o2", "text": "제목 정도는 들어봤다.", "scores": { "konda": 2 } },
+        { "id": "o3", "text": "별 관심이 없고 알아볼 생각도 없다.", "scores": { "konda": 3 } }
+      ]
+    },
+    {
+      "id": "q8",
+      "text": "팀원들이 휴가를 번갈아 쓰겠다고 할 때 나는?",
+      "type": "single_choice",
+      "options": [
+        { "id": "o1", "text": "업무만 조율되면 적극 권장한다.", "scores": { "konda": 1 } },
+        { "id": "o2", "text": "최소한의 인원만 자리를 지키게 한다.", "scores": { "konda": 2 } },
+        { "id": "o3", "text": "\"휴가 눈치껏 써\"라고 말해버린다.", "scores": { "konda": 3 } }
+      ]
+    },
+    {
+      "id": "q9",
+      "text": "후배가 \"이 표현은 좀 구식이에요\"라고 지적할 때 나는?",
+      "type": "single_choice",
+      "options": [
+        { "id": "o1", "text": "\"고마워, 다른 표현도 알려줘\"라고 한다.", "scores": { "konda": 1 } },
+        { "id": "o2", "text": "내심 찔리지만 일단 웃으며 넘긴다.", "scores": { "konda": 2 } },
+        { "id": "o3", "text": "\"너희가 예민한 거야\"라고 단언한다.", "scores": { "konda": 3 } }
+      ]
+    },
+    {
+      "id": "q10",
+      "text": "회사 이벤트나 워크숍 참여도에 대해 나는?",
+      "type": "single_choice",
+      "options": [
+        { "id": "o1", "text": "팀 분위기 위해 적극 참여한다.", "scores": { "konda": 1 } },
+        { "id": "o2", "text": "필요하면 참여하지만 내색은 안 한다.", "scores": { "konda": 2 } },
+        { "id": "o3", "text": "\"이 나이에 무슨 게임이냐\"며 빠진다.", "scores": { "konda": 3 } }
+      ]
+    },
+    {
+      "id": "q11",
+      "text": "후배가 연봉이나 처우에 대한 생각을 나눌 때 나는?",
+      "type": "single_choice",
+      "options": [
+        { "id": "o1", "text": "시장 정보와 현실을 같이 이야기한다.", "scores": { "konda": 1 } },
+        { "id": "o2", "text": "\"그건 회사에서 정할 일\"이라며 최소한으로 답한다.", "scores": { "konda": 3 } },
+        { "id": "o3", "text": "내 경험을 사례로 들어 설명한다.", "scores": { "konda": 2 } }
+      ]
+    },
+    {
+      "id": "q12",
+      "text": "메신저에서 줄임말, 이모티콘을 얼마나 쓰나요?",
+      "type": "single_choice",
+      "options": [
+        { "id": "o1", "text": "상대에 맞춰 유연하게 쓴다.", "scores": { "konda": 1 } },
+        { "id": "o2", "text": "잘 모르지만 가끔 써보려고 한다.", "scores": { "konda": 2 } },
+        { "id": "o3", "text": "절대 쓰지 않는다.", "scores": { "konda": 3 } }
+      ]
+    },
+    {
+      "id": "q13",
+      "text": "자녀가 세대차이 이야기를 꺼낼 때 나는?",
+      "type": "single_choice",
+      "options": [
+        { "id": "o1", "text": "내가 모르는 문화를 배울 기회로 삼는다.", "scores": { "konda": 1 } },
+        { "id": "o2", "text": "대충 웃고 넘기지만 여전히 낯설다.", "scores": { "konda": 2 } },
+        { "id": "o3", "text": "\"너희도 나이 들면 똑같아\"라고 한다.", "scores": { "konda": 3 } }
+      ]
+    },
+    {
+      "id": "q14",
+      "text": "후배의 패션이나 헤어스타일에 대해 느끼는 감정은?",
+      "type": "single_choice",
+      "options": [
+        { "id": "o1", "text": "자기 표현이라 여겨 존중한다.", "scores": { "konda": 1 } },
+        { "id": "o2", "text": "이해하려 하지만 여전히 낯설다.", "scores": { "konda": 2 } },
+        { "id": "o3", "text": "\"회사에 어울리지 않는다\"고 지적한다.", "scores": { "konda": 3 } }
+      ]
+    },
+    {
+      "id": "q15",
+      "text": "업무 방식 디지털화/자동화에 대한 생각은?",
+      "type": "single_choice",
+      "options": [
+        { "id": "o1", "text": "직접 툴을 써보며 변화를 즐긴다.", "scores": { "konda": 1 } },
+        { "id": "o2", "text": "필요에 따라 배우지만 선호하진 않는다.", "scores": { "konda": 2 } },
+        { "id": "o3", "text": "기존 방식이 더 효율적이라고 믿는다.", "scores": { "konda": 3 } }
+      ]
+    },
+    {
+      "id": "q16",
+      "text": "사과가 필요한 상황에서 먼저 사과한 적이?",
+      "type": "single_choice",
+      "options": [
+        { "id": "o1", "text": "잘못을 알면 내가 먼저 사과한다.", "scores": { "konda": 1 } },
+        { "id": "o2", "text": "사과는 하지만 오래 걸린다.", "scores": { "konda": 2 } },
+        { "id": "o3", "text": "윗사람이 사과할 일이 얼마나 있냐고 생각한다.", "scores": { "konda": 3 } }
+      ]
+    },
+    {
+      "id": "q17",
+      "text": "후배가 새로운 툴을 도입하자고 제안하면?",
+      "type": "single_choice",
+      "options": [
+        { "id": "o1", "text": "직접 테스트해 보고 의견을 나눈다.", "scores": { "konda": 1 } },
+        { "id": "o2", "text": "문서나 사례를 더 가져오라고 한다.", "scores": { "konda": 2 } },
+        { "id": "o3", "text": "\"지금도 충분한데 왜?\"라고 반문한다.", "scores": { "konda": 3 } }
+      ]
+    },
+    {
+      "id": "q18",
+      "text": "내 SNS/메신저 프사 업데이트 주기는?",
+      "type": "single_choice",
+      "options": [
+        { "id": "o1", "text": "상황에 따라 자주 바꾸는 편이다.", "scores": { "konda": 1 } },
+        { "id": "o2", "text": "1년에 몇 번 정도 바꾼다.", "scores": { "konda": 2 } },
+        { "id": "o3", "text": "몇 년째 그대로다.", "scores": { "konda": 3 } }
+      ]
+    },
+    {
+      "id": "q19",
+      "text": "후배가 회사 밖 모임에 초대했을 때 나는?",
+      "type": "single_choice",
+      "options": [
+        { "id": "o1", "text": "일정 맞춰 함께 즐긴다.", "scores": { "konda": 1 } },
+        { "id": "o2", "text": "가끔 참석하지만 불편하다.", "scores": { "konda": 2 } },
+        { "id": "o3", "text": "윗사람이 있으면 불편하다고 생각한다.", "scores": { "konda": 3 } }
+      ]
+    },
+    {
+      "id": "q20",
+      "text": "팀원 생일/기념일 챙기는 것에 대한 내 태도는?",
+      "type": "single_choice",
+      "options": [
+        { "id": "o1", "text": "작은 선물이나 메시지를 꼭 전한다.", "scores": { "konda": 1 } },
+        { "id": "o2", "text": "필요하면 챙기지만 의무감까진 없다.", "scores": { "konda": 2 } },
+        { "id": "o3", "text": "업무 외적인 건 신경 쓰지 않는다.", "scores": { "konda": 3 } }
+      ]
+    }
+  ],
+  "resultRules": [
+    {
+      "id": "konda_perfect",
+      "title": "핵인싸 멋진 어른형",
+      "icon": "😎",
+      "condition": { "konda_max": 26 },
+      "summary": "세대차를 인정하고, 배려로 팀을 이끄는 진짜 어른입니다.",
+      "description": "당신은 후배와 자녀에게도 친구 같은 어른이에요. 유행을 이해하려 노력하고, 조언이 필요한 순간엔 진심 담긴 경험을 나누죠.\n\n이 장점 덕분에 세대 간 다리 역할을 톡톡히 하고 있습니다. 주변에서도 \"함께 일하고 싶은 선배\"로 꼽힐 가능성이 높아요."
+    },
+    {
+      "id": "konda_light",
+      "title": "잔소리 한 스푼 어른형",
+      "icon": "🙂",
+      "condition": { "konda_min": 27, "konda_max": 40 },
+      "summary": "가끔은 잔소리가 나오지만 기본적으로 따뜻한 사람입니다.",
+      "description": "옛 감성과 새로운 문화를 적절히 섞으려 노력하는 타입. 다만 스트레스가 쌓이면 \"나 때는\"이 튀어나올 수도 있어요.\n\n조금만 더 세심하게 말을 고르고, 후배의 관점에서 한 번 더 생각해본다면 진짜 멋진 어른으로 자리매김할 수 있습니다."
+    },
+    {
+      "id": "konda_border",
+      "title": "꼰 vs 어른 경계선형",
+      "icon": "😬",
+      "condition": { "konda_min": 41, "konda_max": 52 },
+      "summary": "이해받고 싶지만, 표현 방식 때문에 오해를 사기도 합니다.",
+      "description": "마음속으로는 팀을 아끼지만, 말투나 행동이 구식으로 느껴질 때가 많아요. \"왜 요즘 애들은\"이라는 생각이 습관처럼 따라붙는다면 경고등입니다.\n\n한 번 더 질문하고, 상대의 진짜 의도를 들어보세요. 세대의 차이는 이해로 줄일 수 있습니다."
+    },
+    {
+      "id": "konda_full",
+      "title": "올드스쿨 꼰대력 만렙형",
+      "icon": "🧓",
+      "condition": { "konda_min": 53 },
+      "summary": "말과 행동이 전형적인 올드스쿨 스타일입니다.",
+      "description": "의도는 나쁘지 않지만, 상대방에게는 부담과 거리감으로 느껴질 수 있어요. 농담 한마디가 마음의 벽이 되기도 합니다.\n\n지금이 변곡점입니다. 내가 듣고 싶었던 말보다, 상대가 듣고 싶은 말을 먼저 생각해보세요. 마음의 거리부터 줄이는 것이 첫 걸음입니다."
+    }
+  ]
+}

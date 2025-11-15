@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { NativeBaseProvider, extendTheme } from 'native-base';
 import RootNavigator from './navigation/RootNavigator';
 import { TestEngineProvider } from './state/TestEngineProvider';
+import { initAdmob } from './services/admob';
 
 const theme = extendTheme({
   config: {
@@ -29,6 +30,16 @@ const theme = extendTheme({
 });
 
 const App = () => {
+  useEffect(() => {
+    (async () => {
+      try {
+        await initAdmob();
+      } catch (e) {
+        console.log('[admob] init error', e);
+      }
+    })();
+  }, []);
+
   return (
     <NativeBaseProvider theme={theme}>
       <TestEngineProvider>

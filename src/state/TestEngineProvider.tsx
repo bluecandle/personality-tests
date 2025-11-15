@@ -1,6 +1,7 @@
-import React, { PropsWithChildren, createContext, useCallback, useContext, useMemo, useState } from 'react';
+import React, { PropsWithChildren, createContext, useCallback, useContext, useEffect, useMemo, useState } from 'react';
 import { accumulateScores } from '../engine/testEvaluator';
 import { PersonalityTest, ScoreMap, TestOption } from '../engine/testTypes';
+import { initIAP, restorePremium } from '../services/iap';
 
 interface TestEngineContextValue {
   currentTest?: PersonalityTest;
@@ -20,6 +21,16 @@ export const TestEngineProvider = ({ children }: PropsWithChildren) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [scores, setScores] = useState<ScoreMap>({});
   const [isPremiumUnlocked, setIsPremiumUnlocked] = useState(false);
+
+  useEffect(() => {
+    (async () => {
+      await initIAP();
+      const hasPremium = await restorePremium();
+      if (hasPremium) {
+        setIsPremiumUnlocked(true);
+      }
+    })();
+  }, []);
 
   const startTest = useCallback((test: PersonalityTest) => {
     setCurrentTest(test);

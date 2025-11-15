@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo } from 'react';
+import React, { useMemo } from 'react';
 import { FlatList } from 'react-native';
 import { Badge, Box, Button, HStack, Pressable, Text, VStack } from 'native-base';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
@@ -6,17 +6,13 @@ import { RootStackParamList } from '../navigation/RootNavigator';
 import { getAllTests } from '../engine/testLoader';
 import { PersonalityTest } from '../engine/testTypes';
 import { useTestEngine } from '../state/TestEngineProvider';
-import { showListBanner } from '../services/ads';
+import { BannerAd, BannerAdSize, getBannerUnitId } from '../services/admob';
 
 type Props = NativeStackScreenProps<RootStackParamList, 'TestList'>;
 
 const TestListScreen = ({ navigation }: Props) => {
   const { isPremiumUnlocked } = useTestEngine();
   const tests = useMemo(() => getAllTests(), []);
-
-  useEffect(() => {
-    showListBanner();
-  }, []);
 
   const handlePress = (test: PersonalityTest) => {
     const isLocked = !test.visibleForFree && !isPremiumUnlocked;
@@ -83,20 +79,15 @@ const TestListScreen = ({ navigation }: Props) => {
             </Box>
           }
         />
-        <Box
-          mt={4}
-          bg="gray.800"
-          borderRadius="lg"
-          borderColor="gray.700"
-          borderWidth={1}
-          px={4}
-          py={4}
-          alignItems="center"
-        >
-          <Text color="gray.400" fontSize="sm">
-            여기는 광고가 들어갈 자리입니다.
-          </Text>
-        </Box>
+        {!isPremiumUnlocked && (
+          <Box mt={4} alignItems="center">
+            <BannerAd
+              unitId={getBannerUnitId()}
+              size={BannerAdSize.ADAPTIVE_BANNER}
+              onAdFailedToLoad={(error: unknown) => console.log('[admob] banner error', error)}
+            />
+          </Box>
+        )}
       </VStack>
     </Box>
   );

@@ -1,0 +1,243 @@
+{
+  "id": "lonely_wolf_level_01",
+  "title": "나는 얼마나 외로운 늑대일까?",
+  "description": "단톡방은 많은데, 막상 고민을 터놓을 사람은 몇 명일까? 나의 외로움 레벨을 체크해보는 테스트예요.",
+  "estimatedMinutes": 5,
+  "visibleForFree": false,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "진짜 고민을 털어놓을 수 있는 사람은 몇 명인가요?",
+      "type": "single_choice",
+      "options": [
+        { "id": "o1", "text": "3명 이상은 안정적으로 있다.", "scores": { "lonely": 1 } },
+        { "id": "o2", "text": "1~2명 정도 있다.", "scores": { "lonely": 2 } },
+        { "id": "o3", "text": "바로 떠오르지 않는다.", "scores": { "lonely": 3 } }
+      ]
+    },
+    {
+      "id": "q2",
+      "text": "회사에서 점심을 누구와 먹나요?",
+      "type": "single_choice",
+      "options": [
+        { "id": "o1", "text": "팀원/동료와 자주 같이 먹는다.", "scores": { "lonely": 1 } },
+        { "id": "o2", "text": "상황에 따라 혼자/같이 혼합한다.", "scores": { "lonely": 2 } },
+        { "id": "o3", "text": "거의 혼자 먹거나 건너뛴다.", "scores": { "lonely": 3 } }
+      ]
+    },
+    {
+      "id": "q3",
+      "text": "주말/휴일에 가장 자주 하는 활동은?",
+      "type": "single_choice",
+      "options": [
+        { "id": "o1", "text": "가족/친구와 계획을 세워 함께 한다.", "scores": { "lonely": 1 } },
+        { "id": "o2", "text": "가끔 모이거나 혼자 시간을 나눠 쓴다.", "scores": { "lonely": 2 } },
+        { "id": "o3", "text": "대부분 혼자 집에서 보낸다.", "scores": { "lonely": 3 } }
+      ]
+    },
+    {
+      "id": "q4",
+      "text": "집에 혼자 있을 때 느끼는 감정은?",
+      "type": "single_choice",
+      "options": [
+        { "id": "o1", "text": "편안하고 즐거운 휴식 시간이다.", "scores": { "lonely": 1 } },
+        { "id": "o2", "text": "평소엔 괜찮지만 가끔 허전하다.", "scores": { "lonely": 2 } },
+        { "id": "o3", "text": "공허함과 외로움이 크게 몰려온다.", "scores": { "lonely": 3 } }
+      ]
+    },
+    {
+      "id": "q5",
+      "text": "단톡방 알림을 얼마나 활용하나요?",
+      "type": "single_choice",
+      "options": [
+        { "id": "o1", "text": "대화를 즐기며 적극 참여한다.", "scores": { "lonely": 1 } },
+        { "id": "o2", "text": "읽씹이 많지만 눈팅은 한다.", "scores": { "lonely": 2 } },
+        { "id": "o3", "text": "거의 알림을 꺼두거나 나간다.", "scores": { "lonely": 3 } }
+      ]
+    },
+    {
+      "id": "q6",
+      "text": "마음이 힘든 날, 위로받는 방식은?",
+      "type": "single_choice",
+      "options": [
+        { "id": "o1", "text": "누군가에게 연락하거나 만나 이야기를 나눈다.", "scores": { "lonely": 1 } },
+        { "id": "o2", "text": "SNS/콘텐츠로 잠시 해소한다.", "scores": { "lonely": 2 } },
+        { "id": "o3", "text": "아무에게도 말하지 않고 술/야식으로 버틴다.", "scores": { "lonely": 3 } }
+      ]
+    },
+    {
+      "id": "q7",
+      "text": "\"나도 누군가에게 기대고 싶다\"는 생각은 얼마나 하나요?",
+      "type": "single_choice",
+      "options": [
+        { "id": "o1", "text": "필요하면 기대고 실제로 실행한다.", "scores": { "lonely": 1 } },
+        { "id": "o2", "text": "생각은 하지만 막상 행동은 망설인다.", "scores": { "lonely": 2 } },
+        { "id": "o3", "text": "자주 느끼지만 결국 혼자 참는다.", "scores": { "lonely": 3 } }
+      ]
+    },
+    {
+      "id": "q8",
+      "text": "회사/가정에서 느끼는 고립감은 어느 정도인가요?",
+      "type": "single_choice",
+      "options": [
+        { "id": "o1", "text": "적극적으로 소통해 고립감이 거의 없다.", "scores": { "lonely": 1 } },
+        { "id": "o2", "text": "때때로 거리감이 있지만 견딜 만하다.", "scores": { "lonely": 2 } },
+        { "id": "o3", "text": "늘 혼자 떠 있는 기분이 든다.", "scores": { "lonely": 3 } }
+      ]
+    },
+    {
+      "id": "q9",
+      "text": "새로운 모임/취미에 참여하는 빈도는?",
+      "type": "single_choice",
+      "options": [
+        { "id": "o1", "text": "정기적으로 모임/취미에 나간다.", "scores": { "lonely": 1 } },
+        { "id": "o2", "text": "가끔 참석하지만 꾸준하진 않다.", "scores": { "lonely": 2 } },
+        { "id": "o3", "text": "새로운 모임에 가는 것이 부담스럽다.", "scores": { "lonely": 3 } }
+      ]
+    },
+    {
+      "id": "q10",
+      "text": "가족이나 자녀와 감정을 공유하는 횟수는?",
+      "type": "single_choice",
+      "options": [
+        { "id": "o1", "text": "일주일에 여러 번 서로의 이야기를 나눈다.", "scores": { "lonely": 1 } },
+        { "id": "o2", "text": "한 달에 몇 번 정도 진지한 대화를 한다.", "scores": { "lonely": 2 } },
+        { "id": "o3", "text": "중요한 얘기조차 꺼내지 못한다.", "scores": { "lonely": 3 } }
+      ]
+    },
+    {
+      "id": "q11",
+      "text": "친구들과의 모임에서 내 포지션은?",
+      "type": "single_choice",
+      "options": [
+        { "id": "o1", "text": "분위기 메이커이자 대화 중심에 있다.", "scores": { "lonely": 1 } },
+        { "id": "o2", "text": "주로 듣다가 필요한 말을 한다.", "scores": { "lonely": 2 } },
+        { "id": "o3", "text": "있는 듯 없는 듯 조용히 시간만 보낸다.", "scores": { "lonely": 3 } }
+      ]
+    },
+    {
+      "id": "q12",
+      "text": "전화/영상통화를 통해 안부 묻는 빈도는?",
+      "type": "single_choice",
+      "options": [
+        { "id": "o1", "text": "주기적으로 먼저 연락한다.", "scores": { "lonely": 1 } },
+        { "id": "o2", "text": "상대가 먼저 연락할 때만 응답한다.", "scores": { "lonely": 2 } },
+        { "id": "o3", "text": "전화하는 것이 어색하고 힘들다.", "scores": { "lonely": 3 } }
+      ]
+    },
+    {
+      "id": "q13",
+      "text": "혼자 밥 먹는 것에 대한 감정은?",
+      "type": "single_choice",
+      "options": [
+        { "id": "o1", "text": "전혀 문제 없고 때로는 즐겁다.", "scores": { "lonely": 1 } },
+        { "id": "o2", "text": "괜찮지만 가끔 외롭다.", "scores": { "lonely": 2 } },
+        { "id": "o3", "text": "씁쓸하고 공허하다.", "scores": { "lonely": 3 } }
+      ]
+    },
+    {
+      "id": "q14",
+      "text": "SNS에 내 감정을 솔직하게 쓰는 편인가요?",
+      "type": "single_choice",
+      "options": [
+        { "id": "o1", "text": "적당히 공유하며 소통한다.", "scores": { "lonely": 1 } },
+        { "id": "o2", "text": "눈치 보이지만 가끔은 올린다.", "scores": { "lonely": 2 } },
+        { "id": "o3", "text": "일절 쓰지 않고 숨겨둔다.", "scores": { "lonely": 3 } }
+      ]
+    },
+    {
+      "id": "q15",
+      "text": "\"나를 위해 놀아줄 사람\"에게 연락할 수 있는가?",
+      "type": "single_choice",
+      "options": [
+        { "id": "o1", "text": "시간 맞으면 함께해줄 사람들이 꽤 있다.", "scores": { "lonely": 1 } },
+        { "id": "o2", "text": "한두 명 정도는 있다.", "scores": { "lonely": 2 } },
+        { "id": "o3", "text": "연락할 사람이 떠오르지 않는다.", "scores": { "lonely": 3 } }
+      ]
+    },
+    {
+      "id": "q16",
+      "text": "가장 최근에 \"외롭다\"고 느낀 순간은?",
+      "type": "single_choice",
+      "options": [
+        { "id": "o1", "text": "기억이 잘 안 날 정도로 오래됐다.", "scores": { "lonely": 1 } },
+        { "id": "o2", "text": "지난 몇 주 안에 한 번 있었다.", "scores": { "lonely": 2 } },
+        { "id": "o3", "text": "거의 매주 느낀다.", "scores": { "lonely": 3 } }
+      ]
+    },
+    {
+      "id": "q17",
+      "text": "타인의 도움을 요청하는 빈도는 어느 정도인가요?",
+      "type": "single_choice",
+      "options": [
+        { "id": "o1", "text": "필요하면 바로 도움을 청한다.", "scores": { "lonely": 1 } },
+        { "id": "o2", "text": "정말 급할 때만 부탁한다.", "scores": { "lonely": 2 } },
+        { "id": "o3", "text": "부탁 자체가 부담스러워 그냥 참는다.", "scores": { "lonely": 3 } }
+      ]
+    },
+    {
+      "id": "q18",
+      "text": "출퇴근길에 연락하는 사람이 있나요?",
+      "type": "single_choice",
+      "options": [
+        { "id": "o1", "text": "자연스럽게 연락을 주고받는 사람이 있다.", "scores": { "lonely": 1 } },
+        { "id": "o2", "text": "때때로 연락하지만 대부분은 혼자다.", "scores": { "lonely": 2 } },
+        { "id": "o3", "text": "거의 아무에게도 연락하지 않는다.", "scores": { "lonely": 3 } }
+      ]
+    },
+    {
+      "id": "q19",
+      "text": "새로운 친구를 사귀고 싶은 마음이 있나요?",
+      "type": "single_choice",
+      "options": [
+        { "id": "o1", "text": "적극적으로 새로운 인연을 찾고 있다.", "scores": { "lonely": 1 } },
+        { "id": "o2", "text": "있지만 어떻게 해야 할지 모르겠다.", "scores": { "lonely": 2 } },
+        { "id": "o3", "text": "마음은 있지만 자신이 없다.", "scores": { "lonely": 3 } }
+      ]
+    },
+    {
+      "id": "q20",
+      "text": "오늘 하루를 돌아볼 때 드는 생각은?",
+      "type": "single_choice",
+      "options": [
+        { "id": "o1", "text": "\"사람들과 연결되어 있다\"는 느낌이다.", "scores": { "lonely": 1 } },
+        { "id": "o2", "text": "\"일과 연락은 했지만 어딘가 허전하다\"", "scores": { "lonely": 2 } },
+        { "id": "o3", "text": "\"정말 혼자구나\"라는 생각이 든다.", "scores": { "lonely": 3 } }
+      ]
+    }
+  ],
+  "resultRules": [
+    {
+      "id": "lonely_network",
+      "title": "따뜻한 네트워크형 늑대",
+      "icon": "🫶",
+      "condition": { "lonely_max": 26 },
+      "summary": "주변과 안정적으로 연결되어 있는 든든한 타입입니다.",
+      "description": "당신은 가족, 친구, 동료와 진심 어린 관계를 유지하고 있어요. 외로움을 느끼는 날에도 누군가와 바로 나눌 수 있습니다.\n\n이 네트워크를 지키면서도 새로운 인연을 만들어간다면 더욱 풍성한 삶을 살 수 있어요."
+    },
+    {
+      "id": "lonely_solo",
+      "title": "적당히 혼자를 즐기는 솔로러",
+      "icon": "🧍‍♂️",
+      "condition": { "lonely_min": 27, "lonely_max": 40 },
+      "summary": "혼자 있는 시간도 즐기지만, 간헐적인 외로움이 찾아옵니다.",
+      "description": "자기만의 루틴을 갖고 있지만, 때로는 사람 냄새가 그리울 수 있어요. 가벼운 취미 모임이나 작은 모험을 통해 관계의 폭을 넓혀보세요.\n\n혼자와 함께의 균형을 맞추면 더 단단한 마음을 가질 수 있습니다."
+    },
+    {
+      "id": "lonely_quiet",
+      "title": "겉으론 괜찮아 보이는 조용한 외로움형",
+      "icon": "🌙",
+      "condition": { "lonely_min": 41, "lonely_max": 52 },
+      "summary": "겉으로는 평온해 보이지만 마음속 외로움이 쌓이고 있습니다.",
+      "description": "도움을 청하거나 감정을 표현하는 일이 어렵나요? 조금씩 마음을 열고 솔직한 대화를 시도해 보세요.\n\n일, 가족, 친구 중 한 영역이라도 진심을 나눌 수 있다면 외로움의 무게가 크게 줄어들 겁니다."
+    },
+    {
+      "id": "lonely_wolf",
+      "title": "도움 요청이 어려운 고립형",
+      "icon": "🐺",
+      "condition": { "lonely_min": 53 },
+      "summary": "혼자서 모든 걸 버티려다 마음이 굳어져 버린 상태입니다.",
+      "description": "연락할 곳도, 도움을 요청할 대상도 없다고 느낄 수 있어요. 그러나 작은 신호를 보내는 것부터 시작해야 합니다.\n\n전문가 상담, 커뮤니티, 동호회 등 외부 도움을 받는 것이 약함의 증거가 아닙니다. 늑대에게도 무리가 필요합니다."
+    }
+  ]
+}

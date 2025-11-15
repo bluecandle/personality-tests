@@ -1,18 +1,46 @@
-export const IAP_PRODUCT_ID_REMOVE_ADS = 'remove_ads_and_unlock_all_tests';
+import * as IAP from 'expo-iap';
+
+export const PREMIUM_PRODUCT_ID = 'youngforty_remove_ads_unlock_all'; // TODO: 실제 콘솔 productId와 동일하게
+
+let products: IAP.Product[] = [];
 
 export async function initIAP(): Promise<void> {
-  // TODO: IAP SDK 초기화 (나중에 구현)
-  console.log('[iap] initIAP (stub)');
+  try {
+    await IAP.connectAsync();
+    const response = await IAP.getProductsAsync([PREMIUM_PRODUCT_ID]);
+    const fetchedProducts = ((response as unknown as { results?: IAP.Product[] })?.results ?? response) as IAP.Product[];
+    products = fetchedProducts ?? [];
+    console.log('[iap] products', products);
+  } catch (e) {
+    console.log('[iap] init error', e);
+  }
 }
 
-export async function purchaseRemoveAdsAndUnlock(): Promise<boolean> {
-  // TODO: 실제 구매 로직 (나중에 구현)
-  console.log('[iap] purchaseRemoveAdsAndUnlock (stub)');
-  return false;
+export async function purchasePremium(): Promise<boolean> {
+  try {
+    const result = await IAP.purchaseItemAsync(PREMIUM_PRODUCT_ID);
+    console.log('[iap] purchase result', result);
+    // TODO: expo-iap 필드를 확인해 정확한 성공 조건 적용
+    return true;
+  } catch (e: any) {
+    if (e?.code === 'E_USER_CANCELLED') {
+      console.log('[iap] user cancelled');
+      return false;
+    }
+    console.log('[iap] purchase error', e);
+    return false;
+  }
 }
 
-export async function restorePurchases(): Promise<boolean> {
-  // TODO: 복구 로직 (나중에 구현)
-  console.log('[iap] restorePurchases (stub)');
-  return false;
+export async function restorePremium(): Promise<boolean> {
+  try {
+    const history = await IAP.getPurchaseHistoryAsync(false);
+    const purchases = ((history as unknown as { results?: IAP.Purchase[] })?.results ?? history ?? []) as IAP.Purchase[];
+    const hasPremium = purchases.some((p: any) => p.productId === PREMIUM_PRODUCT_ID);
+    console.log('[iap] restore result', hasPremium);
+    return hasPremium;
+  } catch (e) {
+    console.log('[iap] restore error', e);
+    return false;
+  }
 }
