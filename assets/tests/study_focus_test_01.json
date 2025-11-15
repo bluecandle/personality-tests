@@ -1,0 +1,62 @@
+{
+  "id": "study_focus_test_01",
+  "title": "수험생 집중력 점검",
+  "description": "오늘의 집중 에너지가 얼마나 모였는지 빠르게 확인해보세요.",
+  "estimatedMinutes": 4,
+  "visibleForFree": true,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "공부 시작 전 루틴을 얼마나 지키나요?",
+      "type": "single_choice",
+      "options": [
+        { "id": "o1", "text": "거의 매번 지킨다", "scores": { "focus": 3 } },
+        { "id": "o2", "text": "절반 정도만 지킨다", "scores": { "focus": 2 } },
+        { "id": "o3", "text": "거의 즉흥적으로 시작한다", "scores": { "focus": 1 } }
+      ]
+    },
+    {
+      "id": "q2",
+      "text": "한 과목에 몰입하는 평균 시간은?",
+      "type": "single_choice",
+      "options": [
+        { "id": "o1", "text": "1시간 이상은 기본", "scores": { "focus": 3 } },
+        { "id": "o2", "text": "40분 내외", "scores": { "focus": 2 } },
+        { "id": "o3", "text": "20분도 안 돼서 다른 걸 찾는다", "scores": { "focus": 1 } }
+      ]
+    },
+    {
+      "id": "q3",
+      "text": "공부 중 산만한 요소를 발견하면?",
+      "type": "single_choice",
+      "options": [
+        { "id": "o1", "text": "바로 치우고 다시 집중한다", "scores": { "focus": 3 } },
+        { "id": "o2", "text": "잠깐 다른 일을 하고 돌아온다", "scores": { "focus": 2 } },
+        { "id": "o3", "text": "그냥 딴짓 타임이 된다", "scores": { "focus": 1 } }
+      ]
+    }
+  ],
+  "resultRules": [
+    {
+      "id": "focus_master",
+      "title": "몰입 장인",
+      "condition": { "focus_min": 8 },
+      "summary": "집중력 연료가 가득 찬 상태예요.",
+      "description": "루틴과 몰입 모두 잘 유지되고 있어 고난도 문제도 꾸준히 돌파할 수 있는 컨디션입니다."
+    },
+    {
+      "id": "focus_builder",
+      "title": "기초 다지는 중",
+      "condition": { "focus_min": 5, "focus_max": 7 },
+      "summary": "집중력이 꽤 안정적이지만 아직 더 끌어올릴 여지가 있어요.",
+      "description": "작은 습관을 조금씩 고정시키면 후반 스퍼트에서 큰 힘을 발휘할 수 있습니다."
+    },
+    {
+      "id": "focus_drifter",
+      "title": "집중력 리부팅 필요",
+      "condition": { "focus_max": 4 },
+      "summary": "지금은 마음이 자꾸 흐트러질 수 있는 시기.",
+      "description": "짧은 목표를 세워 빠르게 달성감을 느끼거나, 환경 정리부터 시작해보세요."
+    }
+  ]
+}

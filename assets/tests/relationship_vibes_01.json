@@ -1,0 +1,62 @@
+{
+  "id": "relationship_vibes_01",
+  "title": "연애 온도 체크",
+  "description": "요즘 연애 모드가 뜨거운지, 차분한지 가볍게 진단해보세요.",
+  "estimatedMinutes": 4,
+  "visibleForFree": false,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "상대가 답장을 늦게 해도 마음은 여전히 설렌다.",
+      "type": "single_choice",
+      "options": [
+        { "id": "o1", "text": "기다리는 시간마저 즐겁다", "scores": { "romance": 3 } },
+        { "id": "o2", "text": "조금 답답하지만 괜찮다", "scores": { "romance": 2 } },
+        { "id": "o3", "text": "연락 없으면 바로 불안해진다", "scores": { "romance": 1 } }
+      ]
+    },
+    {
+      "id": "q2",
+      "text": "데이트가 취소되면 나는...",
+      "type": "single_choice",
+      "options": [
+        { "id": "o1", "text": "괜찮아! 다음에 더 재밌게 만나면 되지", "scores": { "romance": 3 } },
+        { "id": "o2", "text": "살짝 아쉽지만 이해한다", "scores": { "romance": 2 } },
+        { "id": "o3", "text": "당장 일정 다시 잡자고 재촉한다", "scores": { "romance": 1 } }
+      ]
+    },
+    {
+      "id": "q3",
+      "text": "사소한 갈등이 생기면?",
+      "type": "single_choice",
+      "options": [
+        { "id": "o1", "text": "먼저 분위기를 풀고 다독인다", "scores": { "romance": 3 } },
+        { "id": "o2", "text": "시간을 갖고 차분히 이야기한다", "scores": { "romance": 2 } },
+        { "id": "o3", "text": "감정이 격해져 대화를 피하기도 한다", "scores": { "romance": 1 } }
+      ]
+    }
+  ],
+  "resultRules": [
+    {
+      "id": "type_hot",
+      "title": "뜨거운 로맨스파",
+      "condition": { "romance_min": 8 },
+      "summary": "연애 온도가 항상 높은 타입!",
+      "description": "사소한 순간까지 설레고 애정 표현이 진한 편이에요. 다만 스스로 번아웃이 오지 않도록 휴식도 챙겨주세요."
+    },
+    {
+      "id": "type_balanced",
+      "title": "포근한 밸런스형",
+      "condition": { "romance_min": 5, "romance_max": 7 },
+      "summary": "따뜻하지만 안정적인 연애를 추구해요.",
+      "description": "상대의 페이스에 맞추면서도 감정선을 잘 지키는 편이라 갈등이 커지기 전에 자연스럽게 풀어낼 수 있습니다."
+    },
+    {
+      "id": "type_cool",
+      "title": "차분한 온도 조절형",
+      "condition": { "romance_max": 4 },
+      "summary": "연애에서도 나만의 공간이 꼭 필요한 타입.",
+      "description": "표현이 비교적 적은 편이라 상대가 서운할 수 있어요. 가끔은 마음속 온도를 솔직하게 공유해보는 건 어떨까요?"
+    }
+  ]
+}

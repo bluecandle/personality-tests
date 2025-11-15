@@ -1,0 +1,52 @@
+{
+  "id": "burnout_test_01",
+  "title": "요즘 번아웃 지수 테스트",
+  "description": "요즘 내가 얼마나 지쳐 있는지 가볍게 체크해보는 테스트예요.",
+  "estimatedMinutes": 3,
+  "visibleForFree": true,
+  "questions": [
+    {
+      "id": "q1",
+      "text": "아침에 눈을 떴을 때, 회사 생각만 하면 다시 자고 싶다.",
+      "type": "single_choice",
+      "options": [
+        { "id": "o1", "text": "매일 그렇다", "scores": { "burnout": 3 } },
+        { "id": "o2", "text": "가끔 그렇다", "scores": { "burnout": 2 } },
+        { "id": "o3", "text": "거의 없다", "scores": { "burnout": 1 } }
+      ]
+    },
+    {
+      "id": "q2",
+      "text": "요즘 사람 만나는 게 귀찮고 피곤하다.",
+      "type": "single_choice",
+      "options": [
+        { "id": "o1", "text": "매우 그렇다", "scores": { "social": 3 } },
+        { "id": "o2", "text": "조금 그렇다", "scores": { "social": 2 } },
+        { "id": "o3", "text": "아니다", "scores": { "social": 1 } }
+      ]
+    }
+  ],
+  "resultRules": [
+    {
+      "id": "type_a",
+      "title": "불타버린 엔진형",
+      "condition": { "burnout_min": 6 },
+      "summary": "지금은 엔진이 거의 과열 상태예요.",
+      "description": "최근 들어 몸도 마음도 많이 지쳐 있는 상태일 가능성이 높아요..."
+    },
+    {
+      "id": "type_b",
+      "title": "조용한 피로 누적형",
+      "condition": { "burnout_min": 4, "burnout_max": 5 },
+      "summary": "겉으로는 괜찮아 보이지만, 조금씩 피로가 쌓이고 있어요.",
+      "description": "아직은 버틸 만하지만, 이 상태가 길어지면 어느 순간 확 무너질 수 있어요..."
+    },
+    {
+      "id": "type_c",
+      "title": "관리 잘하는 휴식형",
+      "condition": { "burnout_max": 3 },
+      "summary": "지금은 비교적 잘 관리하고 있는 편이에요.",
+      "description": "필요할 때 잘 쉬고, 스스로를 챙기는 힘이 있는 타입입니다..."
+    }
+  ]
+}
