@@ -1,5 +1,5 @@
 import React, { useMemo } from 'react';
-import { Box, Button, HStack, Text, VStack } from 'native-base';
+import { Box, Button, HStack, IconButton, Text, VStack, ArrowBackIcon } from 'native-base';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { RootStackParamList } from '../navigation/RootNavigator';
 import { getTestById } from '../engine/testLoader';
@@ -34,10 +34,21 @@ const TestIntroScreen = ({ navigation, route }: Props) => {
   }
 
   return (
-    <Box flex={1} bg="gray.900" safeArea>
-      <VStack flex={1} px={6} py={8} justifyContent="space-between">
+    <Box flex={1} bg="gray.900" safeArea px={6} py={8}>
+      <VStack flex={1} justifyContent="space-between">
         <VStack space={4}>
-          <Text fontSize="3xl" fontWeight="bold" color="white">
+          <HStack alignItems="center" space={3}>
+            <IconButton
+              onPress={() => navigation.goBack()}
+              icon={<ArrowBackIcon color="gray.100" />}
+              borderRadius="full"
+              variant="subtle"
+            />
+            <Text fontSize="md" fontWeight="bold" color="gray.100">
+              테스트 소개
+            </Text>
+          </HStack>
+          <Text fontSize="2xl" fontWeight="bold" color="white">
             {test.title}
           </Text>
           <Text color="gray.300">{test.description}</Text>

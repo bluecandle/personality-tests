@@ -20,9 +20,15 @@ declare module 'react-native-google-mobile-ads' {
     CLOSED = 'closed',
   }
 
+  export enum RewardedAdEventType {
+    LOADED = 'rewarded_loaded',
+    EARNED_REWARD = 'earned_reward',
+  }
+
   export const TestIds: {
     BANNER: string;
     INTERSTITIAL: string;
+    REWARDED: string;
   };
 
   export class InterstitialAd {
@@ -33,6 +39,13 @@ declare module 'react-native-google-mobile-ads' {
   }
 
   export class BannerAd extends React.Component<any> {}
+
+  export class RewardedAd {
+    static createForAdRequest(unitId: string, options?: Record<string, unknown>): RewardedAd;
+    load(): void;
+    show(): void;
+    onAdEvent(callback: (type: AdEventType | RewardedAdEventType, error?: Error) => void): () => void;
+  }
 
   export default function mobileAds(): {
     setRequestConfiguration(config: { maxAdContentRating: MaxAdContentRating }): Promise<void>;

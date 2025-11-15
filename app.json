@@ -25,6 +25,21 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      [
+        "react-native-google-mobile-ads",
+        {
+          "androidAppId": "ca-app-pub-xxxxxxxxxxxxxxxx~yyyyyyyyyy",
+          "iosAppId": "ca-app-pub-xxxxxxxxxxxxxxxx~zzzzzzzzzz"
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "f6a87209-3c0d-4fc3-ad8d-d6707f5b22c8"
+      }
+    },
+    "owner": "jy.kim"
   }
 }

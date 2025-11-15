@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Box, Button, HStack, Pressable, Progress, Text, VStack } from 'native-base';
+import { ArrowBackIcon, Box, Button, HStack, IconButton, Pressable, Progress, Text, VStack } from 'native-base';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { RootStackParamList } from '../navigation/RootNavigator';
 import { useTestEngine } from '../state/TestEngineProvider';
@@ -50,6 +50,17 @@ const TestQuestionScreen = ({ navigation }: Props) => {
   return (
     <Box flex={1} bg="gray.900" safeArea>
       <VStack flex={1} px={6} py={8} space={6}>
+        <HStack alignItems="center" space={3}>
+          <IconButton
+            onPress={() => navigation.goBack()}
+            icon={<ArrowBackIcon color="gray.100" />}
+            borderRadius="full"
+            variant="subtle"
+          />
+          <Text color="gray.300" fontSize="sm">
+            {currentTest.title}
+          </Text>
+        </HStack>
         <VStack space={2}>
           <HStack justifyContent="space-between" alignItems="center">
             <Text color="gray.400">

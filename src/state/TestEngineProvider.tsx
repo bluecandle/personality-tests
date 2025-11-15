@@ -8,10 +8,13 @@ interface TestEngineContextValue {
   currentIndex: number;
   scores: ScoreMap;
   isPremiumUnlocked: boolean;
+  adUnlockedTestIds: string[];
   startTest: (test: PersonalityTest) => void;
   selectOption: (option: TestOption) => void;
   resetTest: () => void;
   setPremiumUnlocked: (value: boolean) => void;
+  unlockTestWithAd: (testId: string) => void;
+  isTestUnlocked: (test: PersonalityTest) => boolean;
 }
 
 const TestEngineContext = createContext<TestEngineContextValue | undefined>(undefined);
@@ -21,6 +24,7 @@ export const TestEngineProvider = ({ children }: PropsWithChildren) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [scores, setScores] = useState<ScoreMap>({});
   const [isPremiumUnlocked, setIsPremiumUnlocked] = useState(false);
+  const [adUnlockedTestIds, setAdUnlockedTestIds] = useState<string[]>([]);
 
   useEffect(() => {
     (async () => {
@@ -31,6 +35,33 @@ export const TestEngineProvider = ({ children }: PropsWithChildren) => {
       }
     })();
   }, []);
+
+  const unlockTestWithAd = useCallback((testId: string) => {
+    setAdUnlockedTestIds((prev) => {
+      if (prev.includes(testId)) {
+        return prev;
+      }
+      return [...prev, testId];
+    });
+  }, []);
+
+  const isTestUnlocked = useCallback(
+    (test: PersonalityTest) => {
+      if (test.visibleForFree) {
+        return true;
+      }
+      if (isPremiumUnlocked) {
+        return true;
+      }
+      if (adUnlockedTestIds.includes(test.id)) {
+        return true;
+      }
+      return false;
+    },
+    [adUnlockedTestIds, isPremiumUnlocked],
+  );
+
+  // TODO: Persist adUnlockedTestIds (e.g., per day) with AsyncStorage if needed later.
 
   const startTest = useCallback((test: PersonalityTest) => {
     setCurrentTest(test);
@@ -59,12 +90,27 @@ export const TestEngineProvider = ({ children }: PropsWithChildren) => {
       currentIndex,
       scores,
       isPremiumUnlocked,
+      adUnlockedTestIds,
       startTest,
       selectOption,
       resetTest,
       setPremiumUnlocked,
+      unlockTestWithAd,
+      isTestUnlocked,
     }),
-    [currentTest, currentIndex, scores, isPremiumUnlocked, startTest, selectOption, resetTest, setPremiumUnlocked],
+    [
+      currentTest,
+      currentIndex,
+      scores,
+      isPremiumUnlocked,
+      adUnlockedTestIds,
+      startTest,
+      selectOption,
+      resetTest,
+      setPremiumUnlocked,
+      unlockTestWithAd,
+      isTestUnlocked,
+    ],
   );
 
   return <TestEngineContext.Provider value={value}>{children}</TestEngineContext.Provider>;
